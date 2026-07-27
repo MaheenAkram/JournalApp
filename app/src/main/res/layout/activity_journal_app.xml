@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F181D"
+    tools:context=".JournalApp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:padding="10dp"
+        android:text=" Journal App "
+        android:textAlignment="center"
+        android:textColor="#40D0FF"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <EditText
+        android:id="@+id/tittle"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:hint=" Tittle "
+        android:inputType="text"
+        android:textColor="#F9FBF9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/discription"
+        android:layout_width="306dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:gravity="top|start"
+        android:hint=" Enter description"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:minLines="4"
+        android:scrollbars="vertical"
+        android:textColor="#F9FBF9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/saveEntry"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#40D0FF"
+        android:fontFamily="sans-serif"
+        android:text="Save Entry"
+        android:textColor="#141414"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discription" />
+
+    <Button
+        android:id="@+id/allJournals"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#40D0FF"
+        android:fontFamily="sans-serif"
+        android:text="View All Journals"
+        android:textColor="#141414"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveEntry" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#40D0FF"
+        android:text="Log Out"
+        android:textColor="#141414"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allJournals" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
